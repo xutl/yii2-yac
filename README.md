@@ -33,7 +33,7 @@ return [
     //....
     'components' => [
         'cache' => [
-            'class' => 'xutl\caching\FileCache',
+            'class' => 'xutl\yac\YacCache',
         ],
     ]
 ];
