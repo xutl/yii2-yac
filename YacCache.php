@@ -5,7 +5,10 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace xutl\caching;
+namespace xutl\yac;
+
+use Yac;
+use yii\caching\Cache;
 
 /**
  * YacCache provides Cache caching in terms of an application component.
@@ -23,7 +26,7 @@ namespace xutl\caching;
 class YacCache extends Cache
 {
     /**
-     * @var \Yac
+     * @var Yac
      */
     private $yac;
 
@@ -34,7 +37,7 @@ class YacCache extends Cache
     public function init()
     {
         parent::init();
-        $this->yac = new \Yac();
+        $this->yac = new Yac();
     }
 
     /**
